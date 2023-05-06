@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    
+	<style>
+		.product {
+			text-align: center;
+			padding: 20px;
+		}
+
+		.product img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+		}
+
+		.product h3 {
+			margin-top: 10px;
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		.product p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+
+		.product .btn {
+			margin-top: 10px;
+		}
+    #cart {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    }
+
+    #cart h3 {
+    margin-top: 0;
+    }
+
+    #cart-items {
+    list-style-type: none;
+    padding: 0;
+    }
+
+    #cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+
+    #cart-items li img {
+    max-width: 50px;
+    margin-right: 10px;
+    }
+
+    #cart-total {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+    }
+
+    #checkout-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    }
+
+    #checkout-btn:hover {
+    background-color: #3e8e41;
+    }
+
+        
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">My Portfolio</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About Me</a>
+				</li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Social Media Links
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="https://www.linkedin.com/in/eric-landaverde-027685212/">LinkedIn</a></li>
+                      <li><a class="dropdown-item" href="#">Twitter</a></li>
+                      <li><a class="dropdown-item" href="#">Instagram</a></li>
+                    </ul>
+                </li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact Me</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="work.html">My Work</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="store.html">My Store
+                    </li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+                
+<!-- Store Page -->
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Our Products</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="Files\coding_interview.png" alt="Product 1" class="card-img-top" width="300" height="200">
+          <div class="card-body">
+            <h4 class="card-title">Coding Interview Guide Book</h4>
+            <p class="card-text">
+              Introducing our comprehensive coding interview guidebook - the ultimate resource for any job seeker looking to excel in coding interviews. Packed with insider tips, tricks, and strategies, this guidebook will help you ace your technical interviews and land your dream job in the tech industry.
+              Whether you're a seasoned programmer or a newcomer to the field, this guidebook covers everything from algorithms and data structures to system design and behavioral questions. </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button id="add-to-cart" type="button" class="btn btn-sm btn-outline-secondary" data-title="Product 3" data-price="9.99" data-image="Files\coding_interview.png">Add to Cart</button>
+
+              </div>
+              <small class="text-muted">$9.99</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="Files\datascience.png" alt="Product 2" class="card-img-top" width="300" height="200">
+          <div class="card-body">
+            <h4 class="card-title">Data Science Job Roadmap </h4>
+            <p class="card-text">
+              The Data Science Job Roadmap is a comprehensive guide to help aspiring data scientists navigate the complex and rapidly evolving field of data science. This roadmap product provides a clear and detailed overview of the skills, tools, and techniques needed to succeed in the data science job market.
+              
+              The product includes a step-by-step roadmap for building a career in data science, with detailed guidance on how to develop the necessary skills and knowledge, identify and pursue relevant job opportunities, and present oneself as an attractive candidate to potential employers.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button id="add-to-cart" type="button" class="btn btn-sm btn-outline-secondary" data-title="Product 3" data-price="19.99" data-image="product3.jpg">Add to Cart</button>
+
+              </div>
+              <small class="text-muted">$19.99</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="Files\database.jpg" alt="Product 3" class="card-img-top" width="300" height="200">
+          <div class="card-body">
+            <h4 class="card-title">Database Management Course</h4>
+            <p class="card-text">Master the skills of database management with our comprehensive course. Learn to design, implement and maintain databases efficiently and securely, and become a valuable asset to any organization. With practical exercises and real-world examples, you'll gain hands-on experience in managing different types of databases. Join now to elevate your career in data management!.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button id="add-to-cart" type="button" class="btn btn-sm btn-outline-secondary" data-title="Product 3" data-price="29.99" data-image="product3.jpg">Add to Cart</button>
+              </div>
+              <small class="text-muted">$29.99</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div id="cart">
+    <h3>Shopping Cart</h3>
+    <ul id="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </ul>
+    <p id="cart-total">Total: $0.00</p>
+    <button id="checkout-btn">Checkout</button>
+  </div>
+  
+  
+  <script>
+if (document.readyState == 'loading') {
+  document.addEventListener('DOMContentLoaded', ready)
+} else {
+  ready()
+}
+
+function ready() {
+  var addToCartButtons = document.getElementsByClassName('btn-outline-secondary')
+  for (var i = 0; i < addToCartButtons.length; i++) {
+    var button = addToCartButtons[i]
+    button.addEventListener('click', addToCartClicked)
+  }
+
+  var removeCartItemButtons = document.getElementsByClassName('btn-danger')
+  for (var i = 0; i < removeCartItemButtons.length; i++) {
+    var button = removeCartItemButtons[i]
+    button.addEventListener('click', removeCartItem)
+  }
+
+  var quantityInputs = document.getElementsByClassName('cart-quantity-input')
+  for (var i = 0; i < quantityInputs.length; i++) {
+    var input = quantityInputs[i]
+    input.addEventListener('change', quantityChanged)
+  }
+
+  document.getElementById('checkout-btn').addEventListener('click', purchaseClicked)
+}
+
+function purchaseClicked() {
+  alert('Thank you for your purchase')
+  var cartItems = document.getElementById('cart-items')
+  while (cartItems.hasChildNodes()) {
+    cartItems.removeChild(cartItems.firstChild)
+  }
+  updateCartTotal()
+}
+
+function removeCartItem(event) {
+  var buttonClicked = event.target
+  buttonClicked.parentElement.parentElement.remove()
+  updateCartTotal()
+}
+
+function quantityChanged(event) {
+  var input = event.target
+  if (isNaN(input.value) || input.value <= 0) {
+    input.value = 1
+  }
+  updateCartTotal()
+}
+
+function addToCartClicked(event) {
+  var button = event.target
+  var shopItem = button.closest('.card')
+  var title = shopItem.querySelector('.card-title').innerText
+  var priceString = button.getAttribute('data-price');
+  var price = parseFloat(priceString); // convert the string to a number
+  var imageSrc = shopItem.querySelector('.card-img-top').src;
+
+  addItemToCart(title, price, imageSrc)
+  updateCartTotal()
+}
+
+function addItemToCart(title, price, imageSrc) {
+  var cartRow = document.createElement('li')
+  cartRow.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'lh-condensed')
+  var cartItems = document.getElementById('cart-items')
+  var cartItemNames = cartItems.getElementsByClassName('my-0')
+  for (var i = 0; i < cartItemNames.length; i++) {
+    if (cartItemNames[i].innerText == title) {
+      alert('This item is already added to the cart')
+      return
+    }
+  }
+  var cartRowContents = `
+    <div class="col-md-5">
+      <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+      <h6 class="my-0">${title}</h6>
+    </div>
+    <div class="col-md-4">
+      <div class="cart-quantity">
+        <input class="cart-quantity-input" type="number" value="1">
+        <button class="btn btn-danger" role="button">REMOVE</button>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <span class="cart-price">${price}</span>
+    </div>`
+  cartRow.innerHTML = cartRowContents
+  cartItems.appendChild(cartRow)
+  cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
+  cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+}
+ 
+
+function updateCartTotal() {
+  var cartItemContainer = document.getElementById('cart-items')
+  var cartRows = cartItemContainer.getElementsByClassName('list-group-item')
+  var total = 0
+  for (var i = 0; i < cartRows.length; i++) {
+    var cartRow = cartRows[i]
+    var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+    var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+    var price = parseFloat(priceElement.innerText.replace('$', ''))
+    var quantity = quantityElement.value
+    var subtotal = price * quantity
+    total += subtotal
+  }
+  total = Math.round(total * 100) / 100
+  document.getElementById('cart-total').innerText = '$' + total
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

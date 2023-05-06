@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My Portfolio</title>
+	<!-- Add CSS/ Bootstrap links here -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+		body {
+			background-image: url("https://img.freepik.com/free-photo/many-blank-business-cards_23-2147725078.jpg?w=1380&t=st=1683056693~exp=1683057293~hmac=5c1919f356687a553eafdcbba03a70d80d59ece8b61f8ff02afb293e9f2b69df");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			height: 100%;
+			width: 100%;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		img {
+			max-width: 80%;
+			height: auto;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+		}
+        h1, H2, p {
+            color: black;
+            font-family: "Times New Roman";
+            text-align: center;
+        }
+	</style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">My Portfolio</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About Me</a>
+				</li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Social Media Links
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="https://www.linkedin.com/in/eric-landaverde-027685212/">LinkedIn</a></li>
+                      <li><a class="dropdown-item" href="#">Twitter</a></li>
+                      <li><a class="dropdown-item" href="#">Instagram</a></li>
+                    </ul>
+                  </li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact Me</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="work.html">My Work</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="store.html">My Store</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Add the sections mentioned above here -->
+	<section id="home">
+		<h1>Welcome to my Portfolio</h1>
+			<p>My name is Eric Landaverde and I am a undergraduate student at Kean University and aspiring doctoral student and data scientist .</p>
+            <div class="container">
+                <img src="Files/E.Landaverde_Headshot.JPG" alt="Centered Image">
+            </div>
+            <div class="text-center">
+                <a href="resume.html" class="btn btn-primary">View Resume</a>
+            </div>
+
+	</section>
+
+	<!-- Add JS scripts here -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper-core.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
